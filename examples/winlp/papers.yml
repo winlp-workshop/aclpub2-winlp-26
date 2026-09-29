@@ -1,0 +1,948 @@
+- abstract: 'We investigate how the amount of fine-tuned capacity affects zero-shot
+    cross-lingual transfer for named entity recognition (NER). Training exclusively
+    on English WikiANN and evaluating on 14 typologically diverse target languages,
+    we find a consistent inverted-U pattern: cross-lingual transfer is worst at both
+    ends of the parameter-efficiency spectrum. Full fine-tuning, which updates all
+    parameters, transfers worst overall and collapses on non-Latin-script languages,
+    while the most parameter-efficient methods, (IA)³ and prefix tuning, also underperform.
+    Methods with an intermediate number of trainable parameters (Low-Rank Adaptation,
+    LoRA; Hu et al., 2022, and Houlsby adapters) transfer best, with LoRA outperforming
+    full fine-tuning by roughly 7 F1 points on average and by over 10 points on languages
+    such as Chinese and Japanese. We find the same inverted-U shape within LoRA alone:
+    a sweep over ranks shows cross-lingual transfer peaking at an intermediate rank,
+    distinct from the higher rank that maximises in-language English performance,
+    revealing a rank–transfer tradeoff. We also examine, and do not find clean support
+    for, the common assumption that better preservation of cross-lingual representational
+    alignment explains PEFT''s transfer benefits: the method that best preserves a
+    standard alignment measure transfers worst, while LoRA''s larger alignment shift
+    coincides with its best transfer. Given known limitations of this alignment measure,
+    we present this as a preliminary, metric-dependent observation that motivates
+    further analysis with more robust alignment metrics, rather than a settled claim.'
+  archival: true
+  attributes:
+    paper_length: Long (8 pages)
+    submission_type: Research Paper
+  authors:
+  - emails: '****@iiserb.ac.in'
+    first_name: Tanushree
+    homepage: https://medium.com/@yadav23/chasing-solar-flares-and-losing-sanity-a-summer-with-sharmas-paper-8fd650abf475
+    last_name: Yadav
+    middle_name: Ravindra Pratap
+    name: Tanushree Ravindra Pratap Yadav
+    orcid: https://orcid.org/0009-0004-0411-255X
+    username: ~Tanushree_Ravindra_Pratap_Yadav1
+  decision: Poster
+  file: 2.pdf
+  id: 2
+  openreview_id: INuD42OPm2
+  pdf_file: a29c7742bc4667997a3678cebe403591630777e0.pdf
+  title: 'Tug-of-War Tuning: Capacity and Cross-Lingual Transfer in Zero-Shot NER'
+- abstract: Large language models are increasingly expected to estimate their own
+    uncertainty, with confidence signals being used to guide retrieval, adaptive compute
+    allocation, routing, and selective abstention. In this work, we investigate whether
+    confidence signals measured at different temporal stages of problem solving encode
+    distinct forms of epistemic information, and whether such signals remain reliable
+    beyond English-centric settings. Inspired by classical meta-memory theory, we
+    distinguish between anticipatory pre-solve confidence (Feeling-of-Knowing, FOK)
+    and retrospective post-solve confidence (Judgement-of-Learning, JOL). We evaluate
+    these signals across frontier LLMs, multiple reasoning domains, translated Marathi
+    benchmarks, and a newly constructed benchmark of genuinely local Marathi factual
+    questions. Across settings, the cheaper pre-solve signal remains weakly calibrated,
+    while post-solve confidence generally provides stronger epistemic alignment despite
+    additional inference cost. We further find that confidence behaviour transfers
+    surprisingly well under direct language translation, with calibration trends largely
+    preserved between English and Marathi. In contrast, confidence reliability degrades
+    substantially on local Marathi knowledge, suggesting that linguistic transfer
+    alone is insufficient to capture the challenges posed by region-specific information
+    needs. Finally, hallucinated responses maintain persistently elevated confidence
+    even after answer generation, highlighting important limitations of current LLM
+    self-assessment mechanisms.
+  archival: true
+  attributes:
+    paper_length: Long (8 pages)
+    submission_type: Research Paper
+  authors:
+  - dblp_id: https://dblp.org/pid/368/4018
+    emails: '****@gmail.com'
+    first_name: Sahil
+    google_scholar_id: https://scholar.google.com/citations?user=_Kho5oEAAAAJ&hl=en
+    homepage: https://sahil-kale.is-a.dev/
+    institution: Eindhoven University of Technology and Knowledge Verse AI
+    last_name: Kale
+    name: Sahil Kale
+    orcid: https://orcid.org/0009-0009-0028-4780
+    username: ~Sahil_Kale1
+  decision: Poster
+  file: 5.pdf
+  id: 5
+  openreview_id: svGNYnVhuM
+  pdf_file: 95b141abfbd088e2b16403d7ec60130fdb71eb98.pdf
+  title: 'Beyond Calibration: Temporal LLM Confidence Assessment Across Languages
+    and Local Settings'
+- abstract: With the growing emphasis on multilingual and cultural evaluation benchmarks
+    for large language models, language and culture are often treated as synonymous,
+    and performance is commonly used as a proxy for a model’s understanding of a given
+    language. In this work, we argue that such evaluations overlook meaningful cultural
+    variation that exists within a single language. We address this gap by focusing
+    on narratives from different regions of Ethiopia and demonstrate that, despite
+    shared linguistic characteristics, region-specific and domain-specific content
+    substantially influences language evaluation outcomes. To this end, we introduce
+    AmharicStoryQA, a long-sequence story question answering benchmark grounded in
+    culturally diverse narratives from Amharic-speaking regions. Using this benchmark,
+    we reveal a significant narrative understanding gap in existing LLMs, highlight
+    pronounced regional differences in evaluation results, and show that supervised
+    fine-tuning yields uneven improvements across regions and evaluation settings.
+    Our findings emphasize the need for culturally grounded benchmarks that go beyond
+    language-level evaluation to more accurately assess and improve narrative understanding
+    in low-resource languages.
+  archival: true
+  attributes:
+    paper_length: Long (8 pages)
+    submission_type: Research Paper
+  authors:
+  - emails: '****@cg.uni-saarland.de'
+    first_name: Israel
+    homepage: http://israelabebe.github.io/
+    last_name: Azime
+    middle_name: Abebe
+    name: Israel Abebe Azime
+    orcid: https://orcid.org/0000-0001-9063-1137
+    username: ~Israel_Abebe_Azime1
+  - emails: '****@aimsammi.org'
+    first_name: Abenezer
+    homepage: https://github.com/AbenezerKb
+    last_name: Angamo
+    name: Abenezer Angamo
+    username: ~Abenezer_Angamo1
+  - emails: '****@aau.edu.et'
+    first_name: Hana
+    institution: Addis Ababa University and Haramaya University
+    last_name: Tamiru
+    middle_name: Mekonen
+    name: Hana Mekonen Tamiru
+    username: ~Hana_Mekonen_Tamiru1
+  - dblp_id: https://dblp.org/pid/429/2984
+    emails: '****@gmail.com'
+    first_name: Dagnachew
+    last_name: Marilign
+    middle_name: Mekonnen
+    name: Dagnachew Mekonnen Marilign
+    orcid: https://orcid.org/0009-0004-0123-5140
+    semantic_scholar_id: https://www.semanticscholar.org/author/Dagnachew-Mekonnen-Marilign/2391591541
+    username: ~Dagnachew_Mekonnen_Marilign1
+  - dblp_id: https://dblp.org/pid/s/PhilippSlusallek
+    emails: '****@dfki.de'
+    first_name: Philipp
+    google_scholar_id: https://scholar.google.de/citations?user=zNGwqSUAAAAJ
+    homepage: https://graphics.cg.uni-saarland.de/people/slusallek.html
+    institution: German Research Center for Artificial Intelligence (DFKI) and Saarland
+      University
+    last_name: Slusallek
+    name: Philipp Slusallek
+    orcid: https://orcid.org/0000-0002-2189-2429
+    semantic_scholar_id: https://www.semanticscholar.org/author/P.-Slusallek/143673845
+    username: ~Philipp_Slusallek1
+  - dblp_id: https://dblp.org/pid/136/8659
+    emails: '****@gmail.com'
+    first_name: Seid
+    google_scholar_id: https://scholar.google.de/citations?user=rDKEGNgAAAAJ&hl=en
+    homepage: https://seyyaw.github.io/
+    institution: Universität Hamburg
+    last_name: Yimam
+    middle_name: Muhie
+    name: Seid Muhie Yimam
+    orcid: https://orcid.org/0000-0002-8289-388X
+    semantic_scholar_id: https://www.semanticscholar.org/author/Seid-Muhie-Yimam/3084761
+    username: ~Seid_Muhie_Yimam1
+  - dblp_id: https://dblp.org/pid/00/1846
+    emails: '****@lsv.uni-saarland.de'
+    first_name: Dietrich
+    google_scholar_id: https://scholar.google.de/citations?user=_HtGYmoAAAAJ&hl=de&oi=ao
+    homepage: https://www.lsv.uni-saarland.de/
+    last_name: Klakow
+    name: Dietrich Klakow
+    orcid: https://orcid.org/0000-0002-4147-9690
+    semantic_scholar_id: https://www.semanticscholar.org/author/D.-Klakow/2561225
+    username: ~Dietrich_Klakow1
+  decision: Poster
+  file: 15.pdf
+  id: 15
+  openreview_id: cwtpFtKX2f
+  pdf_file: f1acd3f3e40990dff6d48b70cd1cddb864e0792e.pdf
+  title: 'AmharicStoryQA: A Multicultural Story Question Answering Benchmark in Amharic'
+- abstract: Multimodal misinformation is increasingly crafted to look convincing by
+    pairing a textual claim with an image that appears to "prove" it. Yet in practice,
+    building effective detectors often hinges on a small set of design choices that
+    are rarely examined in a controlled way. In this paper, we conduct a large-scale
+    study of multimodal design choices for misinformation detection with over 3,375
+    experiments- spanning three benchmark datasets and a broad range of pre-trained
+    vision and language backbones. Through systematic comparisons and targeted robustness
+    analyses, we distill practical guidance on which design choices help, when do
+    they fail silently, and what aspects of the pipeline most strongly shape model
+    behavior, answering 4 key Research Questions (RQs). We aim to provide a reliable
+    foundation for designing stronger and more dependable multimodal misinformation
+    detection systems, thus contributing to the broader research community.
+  archival: true
+  attributes:
+    paper_length: Long (8 pages)
+    submission_type: Research Paper
+  authors:
+  - emails: '****@gmail.com'
+    first_name: Akshit
+    google_scholar_id: https://scholar.google.com/citations?user=wsBYB-gAAAAJ&hl=en&authuser=3
+    institution: Oracle
+    last_name: Sharma
+    name: Akshit Sharma
+    orcid: https://orcid.org/0009-0001-3072-8508
+    username: ~Akshit_Sharma1
+  - dblp_id: https://dblp.org/pid/254/4281.html
+    emails: '****@iitg.ac.in'
+    first_name: Prashant
+    google_scholar_id: https://scholar.google.co.in/citations?user=ab-0SqYAAAAJ&hl=en
+    homepage: https://pwpatil.com
+    institution: Indian Institute of Technology, Guwahati, Indian institute of science,
+      Bangalore
+    last_name: Patil
+    middle_name: W
+    name: Prashant W Patil
+    orcid: https://orcid.org/0000-0003-2604-6501
+    username: ~Prashant_W_Patil1
+  decision: Poster
+  file: 17.pdf
+  id: 17
+  openreview_id: cqM08mAagv
+  pdf_file: 66c43823d720f1003a30c22a9970de469b3d49f2.pdf
+  title: What Improves Multimodal Misinformation Detection? Answers from a Large-Scale
+    Empirical Study
+- abstract: 'Sani et al. (2025) introduced the first dedicated
+
+    Hausa machine-generated text (MGT) detec-
+
+    tor, an AfroXLMR-large classifier trained on
+
+    2,586 paired articles from seven Hausa news
+
+    outlets and Gemini 2.0 Flash, reporting F1 of
+
+    0.9921 on a headline-grouped split. They iden-
+
+    tified three limitations of their work: a single
+
+    news domain, a small batch and short train-
+
+    ing schedule, and a single generator (Gemini
+
+    2.0 Flash) for the machine-generated data. We
+
+    extend their work along the third axis. First,
+
+    we replicate their reported result across four
+
+    random seeds, obtaining F1 of 0.992 ±0.005.
+
+    Test recall on the AI class is 1.000 at every
+
+    seed. Second, we analyse the detector’s false
+
+    positives. All errors fall on Human articles, and
+
+    two native-speaker reviewers confirm these are
+
+    genuine, natural Hausa journalism. The clear-
+
+    est correlate of misclassification is the absence
+
+    of numerical content: the median digit frac-
+
+    tion is 0.0% in misclassified articles vs. 0.6%
+
+    in correctly classified ones. Third, we test the
+
+    detector on six non-training generators span-
+
+    ning four model families. Detection rates span
+
+    from 0% (Aya-Expanse 8B) to nearly 100%
+
+    (Gemma 4). All three Google-family models
+
+    in our experiment (training-distribution Gemini
+
+    2.0 Flash and the two non-training Gemma 4
+
+    variants) are detected at rates above 98% with
+
+    mean P(machine) above 0.98. No non-Google
+
+    generator exceeds 21%. Three contamination
+
+    checks fail to explain this away: generated
+
+    articles overlap very little with their human
+
+    sources, detection barely moves when we re-
+
+    move every article that shares a 13-gram with
+
+    its source, and the Google output that gets de-
+
+    tected is at least as diverse as everyone else’s, so
+
+    it is not memorised or templated text. What the
+
+    detector has learned looks less like a general
+
+    Hausa MGT signal and more like a Gemini-
+
+    family stylistic fingerprint. We discuss what
+
+    this means for deployment, including a 3.1%
+
+    false-positive rate on real Hausa journalists.'
+  archival: true
+  attributes:
+    paper_length: Long (8 pages)
+    submission_type: Research Paper
+  authors:
+  - emails: '****@ab-bkr.com'
+    first_name: Abdulhamid
+    institution: Nasarawa State University Keffi
+    last_name: Abubakar
+    name: Abdulhamid Abubakar
+    orcid: https://orcid.org/0009-0008-2973-0134
+    username: ~Abdulhamid_Abubakar1
+  - emails: '****@noun.edu.ng'
+    first_name: Faisal
+    homepage: https://elearn.nou.edu.ng/user/profile.php
+    institution: Maryam Abacha American University of Nigeria
+    last_name: Adam
+    middle_name: Muhammad
+    name: Faisal Muhammad Adam
+    orcid: https://orcid.org/0009-0004-7521-0827
+    username: ~Faisal_Muhammad_Adam2
+  - dblp_id: https://dblp.org/pid/191/1914
+    emails: '****@gmail.com'
+    first_name: Shamsuddeen
+    google_scholar_id: https://scholar.google.com/citations?user=Ne1nt4gAAAAJ&hl=en
+    homepage: https://www.shmuhammad.com/
+    institution: Imperial College London and Bayero University, Kano-Nigeria
+    last_name: Muhammad
+    middle_name: Hassan
+    name: Shamsuddeen Hassan Muhammad
+    orcid: https://orcid.org/0000-0001-7708-0799
+    semantic_scholar_id: https://www.semanticscholar.org/author/S.-Muhammad/7744881
+    username: ~Shamsuddeen_Hassan_Muhammad1
+  - emails: '****@udusok.edu.ng'
+    first_name: Abubakar
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=sPECF9sAAAAJ
+    last_name: Khalid
+    middle_name: Auwal
+    name: Abubakar Auwal Khalid
+    username: ~Abubakar_Auwal_Khalid1
+  - emails: '****@gmail.com'
+    first_name: Babangida
+    google_scholar_id: https://scholar.google.com/citations?user=HsADWzAAAAAJ&hl=en
+    institution: Bayero University Kano
+    last_name: Sani
+    name: Babangida Sani
+    username: ~Babangida_Sani1
+  decision: Poster
+  file: 21.pdf
+  id: 21
+  openreview_id: xxVJkmuhrZ
+  pdf_file: 933678806062dd2dffedc66328471bee9c12f0af.pdf
+  title: How Well Does It Generalize? A Robustness Study of Hausa Machine-Generated
+    Text Detection
+- abstract: The increasing complexity of state-of-the-art neural networks creates
+    significant computational energy overhead in Natural Language Processing (NLP)
+    applications. A few studies have explored opportunities to reduce overhead by
+    using a Spiking Neural Network (SNN) instead of a mainstream artificial neural
+    network (ANN) in computer vision and sensory domains. A comprehensive analysis
+    of SNN's usability for NLP tasks in low-resource languages has yet to be conducted.
+    Hence, in this paper, we present the first-ever comparative energy-overhead analysis
+    of ANNs vs. SNNs for text classification tasks in low-resource Indian languages
+    such as Hindi, Bengali, and Telugu. Our experiments show that although we lose
+    classification accuracy by an acceptable margin when replacing an ANN with an
+    SNN, we save significant energy, which highlights the potential for efficient
+    utilization of edge computing devices to run NLP tasks for low-resource languages.
+    This work shows a direction for advancing energy-efficient NLP applications, especially
+    for low-resource languages. We make code and dataset publicly available \footnote{\url{
+    https://github.com/PS1076/Energy-Accuracy-Frontier}}.
+  archival: true
+  attributes:
+    paper_length: Short (4 pages)
+    submission_type: Research Paper
+  authors:
+  - emails: '****@iitbbs.ac.in'
+    first_name: Priyam
+    last_name: Saha
+    name: Priyam Saha
+    username: ~Priyam_Saha3
+  - emails: '****@iitbbs.ac.in'
+    first_name: Debiprasanna
+    google_scholar_id: https://scholar.google.com/citations?user=swqpo2YAAAAJ&hl=en
+    homepage: https://secs.iitbbs.ac.in/index.php/dpsahoo/
+    institution: IIT Bhubaneswar
+    last_name: Sahoo
+    name: Debiprasanna Sahoo
+    orcid: https://orcid.org/0000-0003-1438-0617
+    username: ~Debiprasanna_Sahoo1
+  - dblp_id: https://dblp.org/pid/200/8353
+    emails: '****@gmail.com'
+    first_name: Abhik
+    google_scholar_id: https://scholar.google.co.in/citations?user=D0DaFlEAAAAJ&hl=en
+    homepage: https://www.iitbbs.ac.in/profile.php/abhik/
+    institution: IIT Bhubaneswar
+    last_name: Jana
+    name: Abhik Jana
+    orcid: https://orcid.org/0000-0002-4485-0002
+    semantic_scholar_id: https://www.semanticscholar.org/author/Abhik-Jana/16228163
+    username: ~Abhik_Jana2
+  decision: Poster
+  file: 25.pdf
+  id: 25
+  openreview_id: yXxauVIT89
+  pdf_file: 30ce9bcaa3d727f1a702932043be5921f37208cf.pdf
+  title: 'The Energy-Accuracy Frontier: Benchmarking SNNs on Low-Resource Indian Linguistic
+    Tasks'
+- abstract: 'The scarcity of high-quality, phonetically diverse datasets for low-resource
+    languages like Amharic remains a significant barrier to high-fidelity speech synthesis.
+    We present AmhTTS, the first open, natively evaluated Amharic text-to-speech system,
+    developed by fine-tuning SpeechT5 on a curated 25-hour, single-speaker Amharic
+    corpus paired with a HiFi-GAN vocoder. Unlike Meta MMS, the only other publicly
+    available Amharic TTS system, which requires Latin script transliteration and
+    reports no Amharic-specific evaluation, AmhTTS operates natively on Ethiopic script
+    and is the first system to report human MOS scores on Amharic speech synthesis.
+    To address the orthographic complexities of the Ethiopic script, we implement
+    a three-stage text normalisation pipeline covering homophone unification, Ge''ez
+    numeral expansion, and Amharic punctuation handling. System quality is assessed
+    through a rigorous human evaluation via a purpose-built web platform, involving
+    28 native Amharic-speaking voluntary evaluators who rated 35 linguistically motivated
+    samples across four domains: phonetic coverage (ejectives and labialized consonants),
+    gemination and prosody, numeral and date reading, and conversational fluency.
+    Results yield an overall naturalness MOS of 3.71 and intelligibility MOS of 4.02
+    on a 5-point scale, demonstrating that the rich pre-trained representations of
+    SpeechT5 transfer effectively to a low-resource language with only 25 hours of
+    data a fraction of the 460 hours used in the original English fine-tuning. While
+    the system achieves high phonetic accuracy (MOS: 4.22/4.36), numeral synthesis
+    and gemination modeling remain areas for future improvement. Given the demonstrated
+    community demand for accessibility tools, we publicly release our fine-tuned model
+    weights, the AmhTTS corpus, and evaluation data to advance low-resource TTS research.
+    Our web application is currently active, serving users at multiple university
+    disability centers in Ethiopia.'
+  archival: true
+  attributes:
+    paper_length: Long (8 pages)
+    submission_type: Thesis Proposal
+  authors:
+  - emails: '****@gmail.com'
+    first_name: Walelign
+    google_scholar_id: https://scholar.google.com/citations?user=g3zTAG4AAAAJ&hl=en&oi=ao
+    homepage: https://wale.waletsoftware.com/
+    institution: AIMS-Research & Innovation Centre
+    last_name: Sewunetie
+    middle_name: Tewabe
+    name: Walelign Tewabe Sewunetie
+    orcid: https://orcid.org/0000-0003-2787-8019
+    semantic_scholar_id: https://www.semanticscholar.org/author/W.-Sewunetie/101180162
+    username: ~Walelign_Tewabe_Sewunetie1
+  - dblp_id: https://dblp.org/pid/302/8682
+    emails: '****@gmail.com'
+    first_name: Rahel
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=9-TaZd8AAAAJ
+    institution: Ethiopian Artificial Intelligence Institute-
+    last_name: Tamiru
+    middle_name: Mekonen
+    name: Rahel Mekonen Tamiru
+    semantic_scholar_id: https://www.semanticscholar.org/author/Rahel-Mekonen-Tamiru/2130212430
+    username: ~Rahel_Mekonen_Tamiru1
+  - dblp_id: https://dblp.org/pid/154/4306
+    emails: '****@gmail.com'
+    first_name: Israel D.
+    google_scholar_id: https://scholar.google.com/citations?user=5RFgT84AAAAJ&hl=en
+    homepage: http://idgebru.com
+    institution: Facebook
+    last_name: Gebru
+    name: Israel D. Gebru
+    orcid: https://orcid.org/0000-0003-1433-5891
+    username: ~Israel_D._Gebru1
+  decision: Poster
+  file: 33.pdf
+  id: 33
+  openreview_id: 6c6CImxHLJ
+  pdf_file: 374aeeddd297936e0aba83f2df45733bb6a6d435.pdf
+  title: 'AmhTTS: A Low-Resource Amharic Text-to-Speech System'
+- abstract: Rumour detection in Bangla remains severely under-resourced, with prior
+    work conflating it with fake news classification and lacking domain-stratified
+    analysis of the linguistic properties that distinguish misinformation from authentic
+    content. We introduce MisInfo-11K, a domain-stratified corpus of 11,198 instances
+    spanning seven topical domains, constructed from Bangla fact-checking portals
+    and verified news outlets. Using 14 linguistically motivated markers, we show
+    via chi-square and Kruskal-Wallis analysis that 13 of 14 exhibit significant cross-domain
+    variation, revealing distinct deception strategies (e.g., authority mimicry in
+    political rumours, fear amplification in health rumours). Building on this, we
+    introduce the Marker Signal Void (MSV), a chi-square-weighted scoring framework
+    identifying rumour instances with no net discriminative surface signal, establishing
+    Macro-F1 = 0.9843 as the ceiling achievable by this 14-marker set. Benchmarking
+    three pretrained transformers (BanglaBERT, MuRIL, XLM-RoBERTa) against five traditional
+    models, MuRIL achieves the strongest performance (Macro-F1 0.9800), while a marker-augmented
+    Random Forest reaches 0.9750, surpassing XLM-RoBERTa. The gap between the MSV
+    ceiling and transformer performance quantifies the contribution of contextual
+    semantic representations beyond surface-level linguistic cues.
+  archival: true
+  attributes:
+    paper_length: Long (8 pages)
+    submission_type: Research Paper
+  authors:
+  - emails: '****@aust.edu'
+    first_name: Farzana
+    last_name: Manoshi
+    middle_name: Zahid
+    name: Farzana Zahid Manoshi
+    username: ~Farzana_Zahid_Manoshi3
+  - emails: '****@aust.edu'
+    first_name: Sadman
+    last_name: Rashid
+    middle_name: Bin
+    name: Sadman Bin Rashid
+    username: ~Sadman_Bin_Rashid1
+  - emails: '****@aust.edu'
+    first_name: Israt
+    last_name: Anika
+    middle_name: Jahan
+    name: Israt Jahan Anika
+    username: ~Israt_Jahan_Anika1
+  - emails: '****@aust.edu'
+    first_name: Md.
+    google_scholar_id: https://scholar.google.com/citations?user=LSWdSeUAAAAJ&hl=en&authuser=4
+    homepage: https://rakibul72.github.io/
+    last_name: Islam
+    middle_name: Rakibul
+    name: Md. Rakibul Islam
+    orcid: https://orcid.org/0009-0003-6420-8257
+    username: ~Md._Rakibul_Islam1
+  decision: Poster
+  file: 39.pdf
+  id: 39
+  openreview_id: uvpIrGuNX4
+  pdf_file: 2e7f1c726998893caa4e37ff5178862afd8bbf87.pdf
+  title: 'Marker Signal Void: Linguistic Deception Fingerprinting and Transformer
+    Benchmarking on a Domain-Stratified Bangla Rumour Corpus'
+- abstract: "Automated End-to-End test scripts are inherently fragile.  Modifications\
+    \ to the User Interface (UI) cause automation test script failures, imposing significant\
+    \ maintenance overhead. Automated test script repair using Large Language Model\
+    \ (LLM) has shown promise, but existing approaches operate without real-time access\
+    \ to the application under test. To the best of our knowledge, no prior controlled\
+    \ study has compared LLM-based test-script repair with and without MCP-mediated\
+    \ live browser access while keeping the remaining repair settings consistent.\
+    \ Through a controlled experiment on a web application, we inject 30 failure scenarios\
+    \ across two categories of UI modifications (locator changes and DOM structural\
+    \ changes) and evaluate two LLM models (GPT 5.0 Mini and Claude Haiku 4.5) with\
+    \ two conditions (with and without MCP access). \nConfigurations with MCP achieve\
+    \ a correct patch rate of 65\\%, compared with 25% without MCP. The plausible\
+    \ patch rate reached 98% (vs. 87%), the failure rate dropped from 13.3% to 1.7%,\
+    \ and MTTR decreased by 31 seconds. These results suggest that providing agents\
+    \ with MCP-mediated live browser access primarily enhances repair correctness\
+    \ rather than merely increasing re-execution success rates."
+  archival: true
+  attributes:
+    paper_length: Long (8 pages)
+    submission_type: Research Paper
+  authors:
+  - emails: '****@ugm.ac.id'
+    first_name: Divi
+    google_scholar_id: https://scholar.google.com/citations?user=yyjBXzwAAAAJ&hl=en&oi=ao
+    institution: Universitas Gadjah Mada
+    last_name: Putri
+    middle_name: Galih Prasetyo
+    name: Divi Galih Prasetyo Putri
+    username: ~Divi_Galih_Prasetyo_Putri1
+  decision: Poster
+  file: 42.pdf
+  id: 42
+  openreview_id: gpYzkKIzZu
+  pdf_file: 8452095aa423095fd4bcb5de4fbfd2d1c7a890d7.pdf
+  title: Does Live Browser Context Improve LLM-Assisted End-to-End Test Script Repair?
+    An Empirical Study of Playwright MCP
+- abstract: 'Large language models (LLMs) are often suggested as tools for grading
+    student
+
+    writing and giving feedback, but it is unclear how far we can trust them on the
+
+    separate skills that make up good writing. We compare two LLM graders (Gemini
+
+    and Llama) with eight professional English teachers on 20 paragraphs written in
+
+    second-language English by Bengali-speaking undergraduates in Bangladesh, each
+
+    graded by two teachers, scoring content, organization, vocabulary, and grammar
+
+    separately as well as the total. We then run a second stage in which
+
+    teachers read each model''s written explanation, judge whether they agree with
+
+    it, and rate the feedback. The LLMs match the teachers on the total score,
+
+    content, and organization, but are unreliable on vocabulary and grammar, where
+
+    the two models do not even agree with each other. We also show that one low
+
+    agreement score is misleading: it comes from graders giving very similar marks
+
+    (score clustering), not from real disagreement. In the second stage, teachers
+
+    found the AI feedback safe and useful most of the time ($\geq$ 77.5%), with
+
+    very few made-up errors (2.5%), and preferred Gemini''s stricter grammar score
+
+    to their own 20% of the time. LLMs can help grade writing, but a teacher
+
+    should audit their output, with extra care on vocabulary and grammar.'
+  archival: true
+  attributes:
+    paper_length: Short (4 pages)
+    submission_type: Research Paper
+  authors:
+  - emails: '****@gmail.com'
+    first_name: Kowshik
+    google_scholar_id: https://scholar.google.com/citations?user=j-1j70AAAAAJ&hl=en
+    last_name: Saha
+    name: Kowshik Saha
+    username: ~Kowshik_Saha1
+  - emails: '****@outlook.com'
+    first_name: Moyen
+    homepage: https://moyenu2000.github.io/
+    last_name: Uddin
+    name: Moyen Uddin
+    username: ~Moyen_Uddin1
+  - emails: '****@cse.buet.ac.bd'
+    first_name: Md
+    homepage: https://www.facebook.com/share/1Ear2vnGJo/
+    last_name: Turad
+    middle_name: Tanvirul Islam
+    name: Md Tanvirul Islam Turad
+    username: ~Md_Tanvirul_Islam_Turad1
+  - emails: '****@hum.buet.ac.bd'
+    first_name: Mizanur
+    homepage: https://sites.google.com/view/mizanurrahmanphd/home?authuser=0
+    last_name: Rahman
+    name: Mizanur Rahman
+    username: ~Mizanur_Rahman3
+  decision: Poster
+  file: 44.pdf
+  id: 44
+  openreview_id: FMEglNd7H2
+  pdf_file: f353963ce048892b7d02d3a05316b62ccdcec8ce.pdf
+  title: 'Assessing Large Language Models as Automated Writing Evaluation and Feedback
+    Tools: A Human-AI Agreement Study on L2 English Writing'
+- abstract: 'We study how to improve predictive typing via per‑user personalization
+    of a pretrained large language model (LLM). We evaluate personalization in a time-ordered
+    setting, using each user''s earlier messages for adaptation as we try to predict
+    their next message. We compare: (1) personalization versus a non‑personalized
+    base model, (2) differing amounts of left context, (3) one-time adaptation versus
+    making small periodic updates, and (4) full fine-tuning versus parameter-efficient
+    fine-tuning. We find both static and personalized LLMs significantly outperform
+    an n-gram language model. This includes when the n-gram was mixed with a user
+    model learned via prediction by partial matching (PPM). Using long recent user-specific
+    context provided the largest personalization gains: conditioning on up to 1024
+    previous characters reduced the base model''s perplexity by 18\%. We found fine-tuning
+    model weights provided only a small additional gain.'
+  archival: true
+  attributes:
+    paper_length: Long (8 pages)
+    submission_type: Research Paper
+  authors:
+  - emails: '****@mtu.edu'
+    first_name: Soufia
+    google_scholar_id: https://scholar.google.com/citations?user=VuJrq3UAAAAJ&hl=en
+    last_name: Bahmani
+    name: Soufia Bahmani
+    username: ~Soufia_Bahmani1
+  - dblp_id: https://dblp.org/pid/82/5076.html
+    emails: '****@mtu.edu'
+    first_name: Keith
+    google_scholar_id: https://scholar.google.com/citations?user=ItRAq1sAAAAJ
+    homepage: http://www.mtu.edu/cs/department/faculty-staff/faculty/vertanen/
+    institution: Michigan Technological University
+    last_name: Vertanen
+    name: Keith Vertanen
+    semantic_scholar_id: https://www.semanticscholar.org/author/K.-Vertanen/2314856
+    username: ~Keith_Vertanen1
+  decision: Poster
+  file: 45.pdf
+  id: 45
+  openreview_id: kYpY0mpRrN
+  pdf_file: 5abeb707046b758d5347f56e41b79d93bb8a96c7.pdf
+  title: Improved Personalized Typing Predictions via Long Left Context
+- abstract: 'Semantic IDs (SIDs) compress item embeddings into discrete code sequences
+    used as the item vocabulary in generative retrieval. If the encoder is multilingual,
+    it is tempting to assume the resulting SIDs are language-agnostic. We test this
+    assumption on Amazon ESCI dataset \citep{reddy2022esci} rendered in English, Spanish,
+    and Japanese. It fails at two separate points. Multilingual E5 places translations
+    of the same product measurably apart, and residual quantization converts that
+    displacement into a discrete prefix failure: under an English-heavy fit, a Japanese
+    translation recovers the first SID code of its English counterpart in only 7.7\%
+    of cases, against 89.0\% for an English rewording. A product-directed control
+    shows the quantizer does not selectively increase language directions, instead
+    the damage originates in the encoder. Most surprisingly, fitting the quantizer
+    on a balanced language mixture makes cross-lingual agreement worse, not better,
+    even as it equalizes codebook use. An English only fit preserves the first code
+    for 67.6\% of Spanish translations, the balanced fit preserves it for 6.6\%. The
+    results show that multilingual exposure alone does not buy consistent SIDs across
+    languages. Cross-lingual SID agreement has to be optimized directly, or retrieval
+    must tolerate code variation.'
+  archival: true
+  attributes:
+    paper_length: Short (4 pages)
+    submission_type: Research Paper
+  authors:
+  - emails: '****@gmail.com'
+    first_name: Abhinav
+    institution: Amazon
+    last_name: Bohra
+    name: Abhinav Bohra
+    orcid: https://orcid.org/0009-0008-8377-0604
+    semantic_scholar_id: https://www.semanticscholar.org/author/Abhinav-Bohra/2159497320
+    username: ~Abhinav_Bohra2
+  - emails: '****@gmail.com'
+    first_name: Anuj
+    google_scholar_id: https://scholar.google.com/citations?user=vvbE5NsAAAAJ&hl=en
+    last_name: Bohra
+    name: Anuj Bohra
+    orcid: https://orcid.org/0009-0005-0532-0745
+    username: ~Anuj_Bohra1
+  decision: Poster
+  file: 48.pdf
+  id: 48
+  openreview_id: 43b4fUkk65
+  pdf_file: 27bccae93aba8122e9aaa995dfa901246b1b74ff.pdf
+  title: Do Multilingual Encoders Produce Language-Consistent Semantic IDs?
+- abstract: 'Many Bangla words are at once personal names and culturally loaded common
+    nouns: মায়া (Maya) is both a girl''s name and a word for affectionate compassion.
+    Choosing the right reading demands cultural knowledge that is scarce in the pretraining
+    data of modern language models. We introduce Bangla Culturally Entangled Homograph
+    (BanglaCEH) disambiguation and build a Bangla benchmark of 1,516 expert-verified
+    sentences and 3,032 labelled occurrences in which one word appears twice with
+    two distinct readings, each labelled with a culturally grounded category and an
+    explanation of the reasoning behind it. Across open- and closed-source models,
+    we find a systematic dominant-meaning bias, models default to the common-noun
+    sense and overlook the name. A Bangla-specific model fails under every prompting
+    regime we test, showing that language-specific pretraining alone does not confer
+    cultural grounding. We further show that contrastive chain-of-thought prompting
+    can sharply reduce this bias without training, and that distilling cultural explanations
+    teaches small (1--3B) models to reason toward the correct reading rather than
+    memorise labels, cutting dominant-meaning bias from as high as 100% to under 5%
+    and
+
+    turning the failed Bangla-specific model into our strongest system.'
+  archival: true
+  attributes:
+    paper_length: Long (8 pages)
+    submission_type: Research Paper
+  authors:
+  - emails: '****@bscse.uiu.ac.bd'
+    first_name: Md.
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=pRglCCkAAAAJ&view_op=list_works&citft=1&email_for_op=ashuvo221104%40bscse.uiu.ac.bd&gmla=AH8HC4y7xOLPqGyBKOrdlnLmb9coIdRrZIOX8huMX-aCZrPGgRkaHPEVl9II4vOzsR9IPUz4LoO1RsFfcXHhTIUK7PUcWOoaL5_5BYlXtbvsAGwAmdYHSHAk3pOH8MJUfOyQ0hW97EdZse9jEYvbJZcYsVbFdqMFwab-DvaluA2S1O2TeEkBwCw2TWxuBrVwn3wy8yP1-rW7ngw0MoeS1I2rKSVEF5mrnCtLxAxLR9tit9bnVzeZu0VBkA
+    homepage: https://ashuvo25.github.io/portfolio-asadshuvo/
+    last_name: Shuvo
+    middle_name: Asaduzzaman
+    name: Md. Asaduzzaman Shuvo
+    semantic_scholar_id: https://www.semanticscholar.org/author/Md.-Asaduzzaman-Shuvo/2159243225
+    username: ~Md._Asaduzzaman_Shuvo1
+  - emails: '****@bscse.uiu.ac.bd'
+    first_name: Md.
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=SnME29IAAAAJ&view_op=list_works&authuser=2&gmla=AIfU4H4pieAMHsW-yvGO6F-DEnO6jeKp-iruEN9TGFezjoP7DUu6LtdgmbpzxujYb3QvNPbJ2otV7Fv74-Q1ZVHE
+    last_name: Islam
+    middle_name: Adnanul
+    name: Md. Adnanul Islam
+    username: ~Md._Adnanul_Islam1
+  decision: Poster
+  file: 51.pdf
+  id: 51
+  openreview_id: NEdeEEzjiB
+  pdf_file: 40b1f0874c266c473f38df5b56a22edbd084ed0c.pdf
+  title: 'When a Name Is Not a Name: A Benchmark Dataset and Distilled Reasoning for
+    Culturally Entangled Bangla Homographs in Low-Resource LLMs'
+- abstract: 'Automatic SOAP note generation can ease the documentation burden on physicians,
+    but existing reasoning methods often omit clinically important information and
+    generate unsupported content. Progress in Thai is also further hindered by the
+    lack of publicly available datasets.
+
+    We propose ASCRIBE, a physician-inspired framework that ascribes a clinical-significance
+    level to each extracted atomic fact in the conversation before summarization,
+    making a general-purpose LLM a more reliable scribe. We also release ThaiClinicBench,
+    the first de-identified Thai clinical summarization benchmark of real encounters,
+    together with a synthetic training corpus. As a prompt, ASCRIBE outperforms chain-of-thought
+    prompting on GPT-5.4 and Gemini 3.1 Pro across the physician-aligned LLM-judge
+    metrics and improves on standard prompting by up to 10.3 points of completeness
+    LLM-judge metric. As a GRPO reward, it enables a Gemma-4-E4B model trained solely
+    on synthetic data to match Gemini 3.1 Pro in factual precision and surpass it
+    in completeness. Code and data will be released upon acceptance.'
+  archival: true
+  attributes:
+    paper_length: Long (8 pages)
+    submission_type: Research Paper
+  authors:
+  - emails: '****@loolootech.com'
+    first_name: Tarm
+    institution: Looloo Technology
+    last_name: Kalavantavanich
+    name: Tarm Kalavantavanich
+    username: ~Tarm_Kalavantavanich1
+  - emails: '****@loolootech.com'
+    first_name: Teerawut
+    homepage: https://github.com/ThreeTeaTree
+    institution: Looloo Technology
+    last_name: Ponarchar
+    name: Teerawut Ponarchar
+    username: ~Teerawut_Ponarchar1
+  - dblp_id: https://dblp.org/pid/256/8420
+    emails: '****@loolootech.com'
+    first_name: Pattaramanee
+    google_scholar_id: https://scholar.google.co.th/citations?user=xc-r7U8AAAAJ&hl=en
+    homepage: https://pattaramaneea.github.io/
+    institution: Looloo Technology
+    last_name: Arsomngern
+    name: Pattaramanee Arsomngern
+    username: ~Pattaramanee_Arsomngern1
+  - emails: '****@ku.th'
+    first_name: Jenta
+    last_name: Wonglertsakul
+    name: Jenta Wonglertsakul
+    username: ~Jenta_Wonglertsakul1
+  - emails: '****@gmail.com'
+    first_name: Watcharakorn
+    last_name: Chuthong
+    name: WATCHARAKORN CHUTHONG
+    orcid: https://orcid.org/0009-0008-8970-9871
+    username: ~WATCHARAKORN_CHUTHONG1
+  - dblp_id: https://dblp.org/pid/331/0293
+    emails: '****@loolootech.com'
+    first_name: Chiraphat
+    google_scholar_id: https://scholar.google.com/citations?user=fZ9trBIAAAAJ&hl=en
+    last_name: Boonnag
+    name: Chiraphat Boonnag
+    orcid: https://orcid.org/0000-0001-5429-9659
+    username: ~Chiraphat_Boonnag1
+  - emails: '****@loolootech.com'
+    first_name: Knot
+    google_scholar_id: https://scholar.google.com/citations?user=2DAQ0zUAAAAJ&hl=en
+    institution: Looloo Technology Co., Ltd.
+    last_name: Pipatsrisawat
+    name: Knot Pipatsrisawat
+    username: ~Knot_Pipatsrisawat2
+  - emails: '****@gmail.com'
+    first_name: Titipat
+    google_scholar_id: https://scholar.google.com/citations?user=L56sgUQAAAAJ&hl=en
+    homepage: http://titipata.github.io/
+    institution: Mahidol University
+    last_name: Achakulvisut
+    name: Titipat Achakulvisut
+    orcid: https://orcid.org/0000-0002-2124-2979
+    semantic_scholar_id: https://www.semanticscholar.org/author/Titipat-Achakulvisut/3393424
+    username: ~Titipat_Achakulvisut1
+  decision: Poster
+  file: 52.pdf
+  id: 52
+  openreview_id: UxG3WvddrZ
+  pdf_file: 6d0e9ede81261320716ac5e38189844658583ede.pdf
+  title: 'ASCRIBE: Atomic and Significance-Based Reasoning for Thai Clinical SOAP
+    Note Generation'
+- abstract: 'Language models are now tested across many languages, but Kurdish is
+    mostly missing from these efforts. We present KuMMLU, a multiple-choice benchmark
+    for Central Kurdish (Sorani) built from the national examinations of the Kurdistan
+    Region of Iraq. It contains 3,272 questions across 18 subjects: 2,256 native examination
+    questions, with answers taken from the official keys published by the Ministry
+    of Education, and 1,016 questions from six subjects translated from English MMLU.
+    We evaluate 32 language models, including proprietary systems, open-weight models,
+    and multilingual models built for wide language coverage. The best models reach
+    about 88% accuracy, while the five multilingual baselines score between 15.8%
+    and 37.2%, at most modestly above the 25% chance level and well below the strongest
+    general-purpose systems; this includes the one model whose published language
+    list contains Kurdish. Every model scores higher on the translated subset than
+    on the native questions. We examine this gap in light of subject difficulty and
+    possible overlap with training data, and release the benchmark to support Kurdish
+    language technology.'
+  archival: true
+  attributes:
+    paper_length: Short (4 pages)
+    submission_type: Research Paper
+  authors:
+  - emails: '****@ukh.edu.krd'
+    first_name: Akam
+    google_scholar_id: https://scholar.google.com/citations?user=Tx89rVQAAAAJ&hl=en
+    homepage: https://akam-ot.github.io
+    last_name: Nawzad
+    name: Akam Nawzad
+    orcid: https://orcid.org/0009-0009-3139-8203
+    username: ~Akam_Nawzad1
+  decision: Poster
+  file: 62.pdf
+  id: 62
+  openreview_id: jqJDUtlTCP
+  pdf_file: 3d2687df6d4aefc2ef86345194e19fcece215fda.pdf
+  title: 'KuMMLU: A Multitask Language Understanding Benchmark for Central Kurdish'
+- abstract: 'NLP Large Language Models have had a deep impact not only on research
+    but also on society. However, there is one problem underlying their own nature
+    which forbids them to be fully trusted and accountable: Hallucinations – a phenomenon
+    that calls for a scientific account in the form of a theoretical model that represents
+    the underlying rationale of how it emerges. In this paper, we present such a model.
+    In the same spirit as in other fields proposing models of natural phenomena –
+    such as rainfall – or social phenomena – such as knowledge creation in organizations
+    – we propose a theoretical model that serves to explain hallucinations by synthesizing
+    in an abstract and structured framework how the interrelations and interactions
+    of more than 50 factors give rise to this phenomenon helping us to better understand
+    its complexity and idiosyncrasies.'
+  archival: true
+  attributes:
+    paper_length: Long (8 pages)
+    submission_type: Research Paper
+  authors:
+  - dblp_id: https://dblp.org/pid/220/3203
+    emails: '****@gmail.com'
+    first_name: Vicente
+    homepage: https://sites.google.com/site/neuroivan/
+    institution: Ricoh Software Research Center (Beijing) Co., Ltd
+    last_name: Sanchez Carmona
+    middle_name: Ivan
+    name: Vicente Ivan Sanchez Carmona
+    orcid: https://orcid.org/0009-0003-9332-437X
+    semantic_scholar_id: https://www.semanticscholar.org/author/V.-Carmona/3113789
+    username: ~Vicente_Ivan_Sanchez_Carmona1
+  - emails: '****@cn.ricoh.com'
+    first_name: Yuming
+    google_scholar_id: https://scholar.google.com/citations?user=PutAlmwAAAAJ
+    institution: Ricoh Software Research Center Beijing Co., Ltd
+    last_name: Zhang
+    name: Yuming Zhang
+    semantic_scholar_id: https://www.semanticscholar.org/author/Yuming-Zhang/2221336488
+    username: ~Yuming_Zhang10
+  - emails: '****@cn.ricoh.com'
+    first_name: Junyu
+    google_scholar_id: https://scholar.google.com/citations?user=iK1KTbEAAAAJ&hl=en
+    last_name: Zhou
+    name: Junyu Zhou
+    username: ~Junyu_Zhou10
+  - emails: '****@cn.ricoh.com'
+    first_name: Shanshan
+    google_scholar_id: https://scholar.google.com/citations?hl=en&user=z4IBhAwAAAAJ
+    last_name: Jiang
+    name: Shanshan Jiang
+    orcid: https://orcid.org/0009-0004-8604-166X
+    semantic_scholar_id: https://www.semanticscholar.org/author/Shanshan-Jiang/2142373726
+    username: ~Shanshan_Jiang2
+  - dblp_id: https://dblp.org/pid/11/6024-3
+    emails: '****@cn.ricoh.com'
+    first_name: Bin
+    google_scholar_id: https://scholar.google.com/citations?user=JNRMVNYAAAAJ&hl=en
+    institution: Ricoh Company, Ltd.
+    last_name: Dong
+    name: Bin Dong
+    orcid: https://orcid.org/0009-0000-8431-0644
+    username: ~Bin_Dong3
+  decision: Poster
+  file: 11.pdf
+  id: 11
+  openreview_id: eNjjOIZ5tE
+  pdf_file: ''
+  title: A Theoretical Model of Hallucinations in NLP Large Language Models
